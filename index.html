@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文藻小咖啡 - 校園寧靜角落</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">☕ 文藻小咖啡</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">菜單一覽</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">關於我們</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">聯絡位置</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header id="hero" class="cafe-hero text-center text-white d-flex align-items-center">
+        <div class="container" 
+             data-aos="fade-down"         data-aos-duration="1000">    <h1 class="display-3 fw-bolder mb-3">文藻小咖啡</h1>
+          <p class="lead mb-4" 
+             data-aos="fade-up"           data-aos-delay="200">        校園一隅，片刻寧靜。你的充電角落。
+          </p>
+          <a class="btn btn-primary btn-lg px-4" href="#menu" 
+             data-aos="zoom-in"           data-aos-delay="400">        探索菜單
+          </a>
+        </div>
+      </header>
+      
+      <section id="menu" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold text-primary" data-aos="fade-up">📜 我們的飲品</h2>
+          
+          <ul class="nav nav-pills justify-content-center mb-4" id="menuTab" role="tablist" data-aos="fade-up" data-aos-delay="100">
+            <li class="nav-item">
+              <button class="nav-link active" id="coffee-tab" data-bs-toggle="tab" data-bs-target="#coffee" type="button">經典咖啡</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="tea-tab" data-bs-toggle="tab" data-bs-target="#tea" type="button">特選茶飲</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="special-tab" data-bs-toggle="tab" data-bs-target="#special" type="button">文藻特調</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="menuTabContent">
+            
+            <div class="tab-pane fade show active" id="coffee" role="tabpanel">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card h-100 menu-item-card">
+                    <img src="/images/espresso.jpg" class="card-img-top menu-img" alt="義式濃縮">
+                    <div class="card-body">
+                      <h5 class="card-title">義式濃縮 (Espresso)</h5>
+                      <p class="card-text text-muted">經典濃郁，快速提神。</p>
+                      <span class="badge bg-primary fs-6">NT$ 50</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card h-100 menu-item-card">
+                    <img src="/images/americano.jpg" class="card-img-top menu-img" alt="美式咖啡">
+                    <div class="card-body">
+                      <h5 class="card-title">美式咖啡 (Americano)</h5>
+                      <p class="card-text text-muted">清爽黑咖啡，學習良伴。</p>
+                      <span class="badge bg-primary fs-6">NT$ 65</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card h-100 menu-item-card">
+                    <img src="/images/latte.jpg" class="card-img-top menu-img" alt="拿鐵咖啡">
+                    <div class="card-body">
+                      <h5 class="card-title">拿鐵咖啡 (Latte)</h5>
+                      <p class="card-text text-muted">香醇牛奶與濃縮咖啡的完美結合。</p>
+                      <span class="badge bg-primary fs-6">NT$ 80</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="tea" role="tabpanel">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card h-100 menu-item-card">
+                    <img src="/images/wenzao-tea.jpg" class="card-img-top menu-img" alt="文藻紅茶">
+                    <div class="card-body">
+                      <h5 class="card-title">文藻紅茶</h5>
+                      <span class="badge bg-secondary fs-6">NT$ 40</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card h-100 menu-item-card">
+                    <img src="/images/matcha-latte.jpg" class="card-img-top menu-img" alt="日式抹茶拿鐵">
+                    <div class="card-body">
+                      <h5 class="card-title">日式抹茶拿鐵</h5>
+                      <span class="badge bg-secondary fs-6">NT$ 90</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tab-pane fade" id="special" role="tabpanel">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="zoom-in">
+                  <div class="card h-100 menu-item-card">
+                    <img src="/images/exotic-special.jpg" class="card-img-top menu-img" alt="異國風味特調">
+                    <div class="card-body">
+                      <h5 class="card-title text-warning">異國風味特調</h5>
+                      <span class="badge bg-warning fs-6">NT$ 100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-5 overflow-hidden">
+        <div class="container text-center">
+          <h2 class="mb-4 fw-bold text-primary" data-aos="fade-up">🏫 關於文藻小咖啡</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <p class="lead mb-4" data-aos="fade-right" data-aos-delay="200">
+                我們深知校園生活的繁忙，因此「文藻小咖啡」的創立，宗旨就是為師生們提供一個安靜且舒適的休息角落。
+              </p>
+              <blockquote class="blockquote" data-aos="fade-left" data-aos-delay="400">
+                <p class="mb-0">一杯咖啡，換取片刻寧靜，重新啟動學習動力。</p>
+                <footer class="blockquote-footer mt-2">文藻小咖啡 團隊</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 bg-light overflow-hidden">
+        <div class="container">
+          <h2 class="text-center mb-4 fw-bold text-primary" data-aos="fade-up">📍 聯絡我們</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-delay="200">
+              <h4>營業資訊</h4>
+              <ul class="list-group list-group-flush shadow-sm">
+                <li class="list-group-item">地點：文藻外語大學 X 樓 (靠近圖書館)</li>
+                <li class="list-group-item">營業時間：週一至週五 09:00 - 17:00</li>
+                <li class="list-group-item">聯絡電話：(07) XXXX-XXXX</li>
+              </ul>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
+              <h4>校園地圖指引 (範例)</h4>
+              <div class="ratio ratio-4x3 shadow-sm rounded overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.332308119293!2d120.3204961750274!3d22.684164079493183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3aee9306b864a781%3A0x8e83b4b0a424b94!2sWenzao%20Ursuline%20University%20of%20Languages!5e0!3m2!1sen!2stw!4v1703649600000!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="bg-dark py-4">
+      <div class="container text-center">
+        <p class="text-white-50 mb-0">© 2025 文藻小咖啡. All rights reserved. | 採用 Vite & Bootstrap 建構</p>
+      </div>
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
