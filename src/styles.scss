@@ -1,53 +1,38 @@
-// 1. 直接匯入完整的 Bootstrap (這會自動處理所有依賴，避免 Undefined mixin 錯誤)
+// 引入 Bootstrap
 @import "bootstrap/scss/bootstrap";
 
-// ===================================
-// 2. 客製化變數 (如果需要改顏色，放在這裡)
-// ===================================
-$primary: #4e785d; 
-$secondary: #a3725f; 
+:root {
+  --neon-blue: #00d2ff;
+  --deep-purple: #240046;
+}
 
-// ===================================
-// 3. 客製化元件樣式
-// ===================================
-
-// 防止 AOS 動畫造成的左右溢出捲軸 (解決紅字警告後，這行很重要)
 body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0b032d;
+  color: white;
   overflow-x: hidden;
-  font-family: "Noto Sans TC", "Microsoft YaHei", sans-serif;
-  background-color: #f8f9fa;
 }
 
-// 主視覺區 (Hero)
-.cafe-hero {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/1600/600?cafe'); 
-  background-size: cover;
-  background-position: center;
-  padding: 8rem 0; 
-  min-height: 50vh;
+// 滿版主視覺區
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(11, 3, 45, 0.7), rgba(11, 3, 45, 0.7)),
+              url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-// 菜單卡片與圖片裁剪
-.menu-item-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
-  }
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
 }
 
-.menu-img {
-  height: 200px;    // 固定高度
-  width: 100%;      
-  object-fit: cover; // 裁切圖片不變形
-}
-
-// 導覽列啟動狀態樣式
-.nav-link.active {
-  color: $primary !important;
-  font-weight: bold;
+.speaker-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid var(--neon-blue);
 }
